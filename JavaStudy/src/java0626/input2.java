@@ -28,13 +28,13 @@ public class input2 {
 		name1=scan.next();
 		System.out.println("첫 번째 직원의 부서: ");
 		division1=scan.next();
-		System.out.println("첫 번째 직원의 월급: ");
+		System.out.println("첫 번째 직원의 월 급여액: ");
 		pay1=scan.nextInt();
 		System.out.println("두 번째 직원의 이름: ");
 		name2=scan.next();
 		System.out.println("두 번째 직원의 부서: ");
 		division2=scan.next();
-		System.out.println("두 번째 직원의 월급: ");
+		System.out.println("두 번째 직원의 월 급여액: ");
 		pay2=scan.nextInt();
 		//세금 계산
 		float t, tax1, tax2;
