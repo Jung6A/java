@@ -4,6 +4,7 @@ public class java0625 {
 
 	public static void main(String[] args) {
 		// 자바 기본 구조: 프로젝트-패키지-클래스
+		// 자바 토큰: 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 (필요시 사용)
 		
 		System.out.println("자바 테스트"); //출력. 약어: syso+ctrl+space
 		//코드 실행: 왼쪽 ctrl+F11
