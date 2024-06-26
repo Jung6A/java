@@ -37,12 +37,13 @@ public class input2 {
 		System.out.println("두 번째 직원의 월 급여액: ");
 		pay2=scan.nextInt();
 		//세금 계산
-		float t, tax1, tax2;
+		float t;
+		int salary1, salary2;
 		t=0.08f;
-		tax1=pay1-(pay1*t);
-		tax2=pay2-(pay2*t);
-		System.out.printf("첫 번째 직원\n이름: %s, 부서: %s, 월급 실 수령액: %.0f원\n",name1,division1,tax1);
-		System.out.printf("두 번째 직원\n이름: %s, 부서: %s, 월급 실 수령액: %.0f원\n",name2,division2,tax2);
+		salary1=(int)(pay1-(pay1*t));
+		salary2=(int)(pay2-(pay2*t));
+		System.out.printf("첫 번째 직원\n이름: %s, 부서: %s, 월급 실 수령액: %d원\n", name1,division1,salary1);
+		System.out.printf("두 번째 직원\n이름: %s, 부서: %s, 월급 실 수령액: %d원\n", name2,division2,salary2);
 		
 	}
 
