@@ -40,7 +40,7 @@ public class input2 {
 		float t;
 		int salary1, salary2;
 		t=0.08f;
-		salary1=(int)(pay1-(pay1*t));
+		salary1=(int)(pay1-(pay1*t)); //강제형변환
 		salary2=(int)(pay2-(pay2*t));
 		System.out.printf("첫 번째 직원\n이름: %s, 부서: %s, 월급 실 수령액: %d원\n", name1,division1,salary1);
 		System.out.printf("두 번째 직원\n이름: %s, 부서: %s, 월급 실 수령액: %d원\n", name2,division2,salary2);
