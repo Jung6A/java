@@ -29,7 +29,7 @@ public class Bitop {
 		
 		System.out.println(34&15); //&연산: 곱하기를 생각
 		System.out.println(42|21); //|연산: 더하기를 생각 (실제 더하는 것x)
-		System.out.println(42^22); //^연산
+		System.out.println(42^22); //^연산(x or): 
 	}
 
 }
