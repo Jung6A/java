@@ -21,30 +21,34 @@ public class input2 {
 		
 		Scanner scan=new Scanner(System.in);
 		
-		String name1, name2, division1, division2;
-		int pay1, pay2; 
+		String name=null, division=null;
+		int pay=0, salary=0;
+		float t=0.08f;
 		
-		System.out.println("첫 번째 직원의 이름: ");
-		name1=scan.next();
-		System.out.println("첫 번째 직원의 부서: ");
-		division1=scan.next();
-		System.out.println("첫 번째 직원의 월 급여액: ");
-		pay1=scan.nextInt();
+		System.out.println("이름: ");
+		name=scan.nextLine();
+		System.out.println("부서: ");
+		division=scan.nextLine();
+		System.out.println("월 급여액(만 단위): ");
+		pay=scan.nextInt();
+		salary=(int)(pay-(pay*t)); //강제형변환
+		System.out.printf("이름: %s\n부서: %s, 월급 실 수령액: %d만원\n", name,division,salary);
+		//Integer.parseInt(scan.nextLine());  문자로 받은 걸 정수로 변환 꼼수?
+		
+		scan.nextLine(); //숫자입력->문자 입력을 할 경우 사이에 nextLine();으로 \n 값을 빼줌
+		
 		System.out.println("두 번째 직원의 이름: ");
-		name2=scan.next();
+		name=scan.nextLine();
 		System.out.println("두 번째 직원의 부서: ");
-		division2=scan.next();
-		System.out.println("두 번째 직원의 월 급여액: ");
-		pay2=scan.nextInt();
-		//세금 계산
-		float t;
-		int salary1, salary2;
-		t=0.08f;
-		salary1=(int)(pay1-(pay1*t)); //강제형변환
-		salary2=(int)(pay2-(pay2*t));
-		System.out.printf("첫 번째 직원\n이름: %s, 부서: %s, 월급 실 수령액: %d원\n", name1,division1,salary1);
-		System.out.printf("두 번째 직원\n이름: %s, 부서: %s, 월급 실 수령액: %d원\n", name2,division2,salary2);
+		division=scan.nextLine();
+		System.out.println("두 번째 직원의 월 급여액(만 단위): ");
+		pay=scan.nextInt();
+		salary=(int)(pay-(pay*t));
+		System.out.printf("이름: %s\n부서: %s, 월급 실 수령액: %d만원\n", name,division,salary);
 		
+		//next();는 엔터(\n) 값을 가지지 않아서 버퍼에 계속 남음 -> 나중에 문제가 생길 수도 있음
+		//next();를 쓴 후에는 늘 nextLine();으로 \n 값을 빼주는 것이 좋음
+		//next(); 스페이스, tab, 엔터 키로 입력 종료  nextLine(); 엔터 키로 입력 종료
 	}
 
 }
