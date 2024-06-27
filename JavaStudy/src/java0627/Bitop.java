@@ -46,6 +46,14 @@ public class Bitop {
 		// >> 2의 n승만큼 나누기
 		System.out.println(1024>>3); // 1024를 2의 3승으로 나누기
 		
+		int red=187;
+		int green=228;
+		int blue=246;
+		int color=(red<<16)|(green<<8)|blue;
+		
+		System.out.printf("#%X \n",color);
+		//rgb값을 헥사코드로 변환
+		
 	}
 
 }
