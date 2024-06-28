@@ -62,7 +62,7 @@ public class Conditional {
 			case "exit": 
 		}
 		*/
-		//조건식이 == 연산자 사용시 switch로 작성하는 고려
+		//조건식이 == 연산자 사용시 switch로 작성 고려
 		
 		//시작 버튼: 게임 시작 종료 버튼: 종료 저장 버튼: 저장
 		
