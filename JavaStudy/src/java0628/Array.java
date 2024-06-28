@@ -18,12 +18,13 @@ public class Array {
 		int[] arr=new int[10];
 		// 배열 공간 10개 생성
 		int[] brr=new int[] {10,20,30,40};
+		System.out.println(arr[2]+brr[1]);
 		
 		// int arr2=new int[]; 크기 지정 필수, 오류
 		
 		int size=15;
 		int[] arr2=new int[size];
-		System.out.println(Arrays.toString(arr2));
+		System.out.println(arr2[0]);
 		
 		//배열 생성 방법: 데이터타입[]=new 데이터타입[크기];
 		
@@ -34,9 +35,55 @@ public class Array {
 		money[3]=43000;
 		money[4]=50000;
 		
+		//10000 이상의 값 출력
+		
 		for(int i=0;i<money.length;i++){
-			System.out.println(money[i]+"원");
+			if(money[i]>=10000) {
+				System.out.println(money[i]+"원");
+			}
 		}
+		
+		int[] Aclass=new int[3];
+		Aclass[0]=89; Aclass[1]=78; Aclass[2]=93;
+		int[] Bclass=new int[3];
+		Bclass[0]=56; Bclass[1]=84; Bclass[2]=72;
+		
+		System.out.println("A반 성적: "+Arrays.toString(Aclass));
+		System.out.println("B반 성적: "+Arrays.toString(Bclass));
+		
+		//A반과 B반의 성적 중 80점 이상만 출력
+		
+		for(int i=0;i<Aclass.length;i++){
+			if(Aclass[i]>=80){
+				System.out.println("A반 "+Aclass[i]);
+			}
+			if(Bclass[i]>=80){
+				System.out.println("B반 "+Bclass[i]);
+			}
+		}
+		
+		int[] first=new int[Aclass.length+Bclass.length];
+		//복사할 배열, 복사 시작 인덱스, 저장할 배열, 저장 위치 인덱스, 복사할 크기
+		System.arraycopy(Aclass,0,first,0,Aclass.length);
+		System.arraycopy(Bclass, 0, first, 3, Bclass.length);
+		
+//		for(int i=0;i<Bclass.length;i++){
+//			first[i]=Aclass[i];
+//			first[i+3]=Bclass[i];
+//		}
+		
+		System.out.print("1학년 우수 성적: ");
+		for(int i=0;i<first.length;i++){
+			if(first[i]>=80){
+				System.out.print(+first[i]+" ");
+			}
+		}
+		
+		Arrays.sort(first); //오름차순 정렬
+		System.out.println(Arrays.toString(first));
+		
+		boolean same=Arrays.equals(Aclass,Bclass);
+		System.out.println("A반 B반 성적이 같은가? "+same);
 		
 	}
 
