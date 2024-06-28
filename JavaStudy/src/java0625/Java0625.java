@@ -33,7 +33,7 @@ public class Java0625 {
 		int area=width*height;
 		System.out.println("넓이: "+area);
 		
-		//키보드를 30개 구매해야 한다. hp게이밍 키보드의 가격이 8000원이라면 총 구매금액은 얼마인가?
+		//키보드를 30개 구매해야 한다. hp 게이밍 키보드의 가격이 8000원이라면 총 구매금액은 얼마인가?
 		
 		int keyboard=30;
 		int price=8000;
