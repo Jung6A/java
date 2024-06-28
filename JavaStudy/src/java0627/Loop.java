@@ -141,20 +141,20 @@ public class Loop {
 			System.out.println("sum 출력: "+sum);
 		}
 		
-		//배스킨라빈스31
+		//31게임
 		//컴퓨터와 나와 둘이 한번에 제시할 수 있는 숫자는 최소 1개, 최대 3개
 		//31을 입력하면 패배
 		
 		int num=1;
 		
-		baskin:
+		game:
 		for(;;){ //while(true)
 			System.out.print("숫자 몇 개?: ");
 			int user=scan.nextInt();
 			System.out.print("나: ");
 			for(int u=1;u<=user;u++){
 				System.out.print(num+" ");
-				if(num==31) break baskin;
+				if(num==31) break game;
 				num++;
 			}
 			System.out.println();
@@ -163,7 +163,7 @@ public class Loop {
 			System.out.print("com: ");
 			for(int c=1;c<=com;c++){
 				System.out.print(num+" ");
-				if(num==31) break baskin;
+				if(num==31) break game;
 				num++;
 			}
 			System.out.println();
