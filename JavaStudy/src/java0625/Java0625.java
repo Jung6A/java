@@ -1,6 +1,6 @@
 package java0625;
 
-public class java0625 {
+public class Java0625 {
 
 	public static void main(String[] args) {
 		// 자바 기본 구조: 프로젝트-패키지-클래스
