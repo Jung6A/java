@@ -93,6 +93,7 @@ public class Input {
 		 세 과목의 총점과 평균 각각 출력
 		 		 
 		 */
+		
 		float C, java, building;
 		
 		System.out.println("C언어 점수 입력: ");

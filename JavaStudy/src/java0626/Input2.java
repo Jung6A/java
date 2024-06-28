@@ -33,7 +33,7 @@ public class Input2 {
 		pay=scan.nextInt();
 		salary=(int)(pay-(pay*t)); //강제형변환
 		System.out.printf("이름: %s\n부서: %s, 월급 실 수령액: %d만원\n", name,division,salary);
-		//Integer.parseInt(scan.nextLine());  문자로 받은 걸 정수로 변환 꼼수?
+		//Integer.parseInt(scan.nextLine());  문자로 받은 걸 정수로 변환하는 꼼수?
 		
 		scan.nextLine(); //숫자입력->문자 입력을 할 경우 사이에 nextLine();으로 \n 값을 빼줌
 		
