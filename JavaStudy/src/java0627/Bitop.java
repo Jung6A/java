@@ -52,7 +52,7 @@ public class Bitop {
 		int color=(red<<16)|(green<<8)|blue;
 		
 		System.out.printf("#%X \n",color);
-		//rgb값을 헥사코드로 변환
+		//rgb 값을 헥사코드로 변환
 		
 	}
 
