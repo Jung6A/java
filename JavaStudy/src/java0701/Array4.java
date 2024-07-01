@@ -51,19 +51,72 @@ public class Array4 {
 			}
 		}
 		
-		String[] temp=new String[seon];
+		String[] seonhwadong=new String[seon];
 		
-		int k=0;
+		int count=0;
 		for(int i=0;i<addr.length;i++){
 			if(addr[i].contains("선화동")){
-				temp[k]=addr[i];
-				k++;
+				seonhwadong[count++]=addr[i];
+				//count++;
 			}
 		}
-		addr=temp;
 		
-		System.out.println(Arrays.toString(addr));
+		System.out.println(Arrays.toString(seonhwadong));
 
+		//2차원 배열
+		//1차원 배열의 공간에 1차원 배열을 연결해놓은 구조
+		
+		int[][] arr=new int[2][3];
+		//2차원 배열은 인덱스가 두 개이므로 데이터 타입 뒤 [] 두 개
+		arr[0][0]=10; arr[0][1]=20; arr[0][2]=30; arr[1][0]=40; arr[1][1]=50; arr[1][2]=60;
+		
+		//고등학교 1학년 학생들의 성적
+		//1학년은 1~6반
+		//new int[6][30]
+		
+		int[] a=new int[] {10,20,30,40,50,60,70,80,90,100};
+		
+		for(int data:a){ //forEach, each
+			System.out.println(data);
+		}
+		System.out.println();
+		//배열(인덱스) 전용 for문, 배열에 들어있는 데이터를 순차적으로 빼내옴
+		
+		int[][] array1=new int[2][3];
+		System.out.println(array1.length);
+		System.out.println(array1[0].length);
+		System.out.println(array1[1].length);
+		System.out.println();
+		
+		int[][] array2=new int[][] {{1,2},{3,4,5}};
+		System.out.println(array2.length);
+		System.out.println(array2[0].length);
+		System.out.println(array2[1].length);
+		System.out.println();
+		
+		//2차원 배열의 출력 방법
+		System.out.print(array2[0][0]+" ");
+		System.out.print(array2[0][1]+" ");
+		System.out.println();
+		System.out.print(array2[1][0]+" ");
+		System.out.print(array2[1][1]+" ");
+		System.out.println(array2[1][2]);
+		System.out.println();
+		
+		for(int i=0;i<array2.length;i++){
+			for(int j=0;j<(array2[i].length);j++){
+				System.out.print(array2[i][j]+" ");
+			}
+			System.out.println();
+		}
+		System.out.println();
+		
+		for(int[] array:array2) {
+			for(int k:array) {
+				System.out.print(k+" ");
+			}
+			System.out.println();
+		}
 	}
 
 }
