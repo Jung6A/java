@@ -63,7 +63,7 @@ public class ClassBasic {
 		fold.메모리=512;
 		
 		apple.제품명="아이폰 15 프로";
-		apple.운영체제="iOS";
+		apple.운영체제="iOS18";
 		apple.메모리=512;
 		
 		System.out.print(flip.제품명+"\n운영체제: "+flip.운영체제+", 메모리 용량: "+flip.메모리+"GB");
