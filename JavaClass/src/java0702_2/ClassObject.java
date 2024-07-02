@@ -6,11 +6,9 @@ public class ClassObject {
 		
 		Car car1;
 		
-		car1=new Car();
+		car1=new Car(); //carName, displacement, fuel º¯¼ö »ý¼º
 		car1.carName="½î³ªÅ¸";
 		car1.fuel="ÈÖ¹ßÀ¯";
-		
-		System.out.println(car1.carName);
 		
 	}
 
