@@ -117,8 +117,8 @@ public class StringMethod {
 		System.out.println(a.replaceAll("[\\d]","")); //특수문자이기 때문에 \는 한 번 더 입력
 		System.out.println(a.replaceAll("[\\D]",""));
 		
-		String bb="203";
-		int cc=Integer.parseInt(bb); //문자열을 정수로 변환
+//		String bb="203";
+//		int cc=Integer.parseInt(bb); //문자열을 정수로 변환
 		
 		//문제
 		
