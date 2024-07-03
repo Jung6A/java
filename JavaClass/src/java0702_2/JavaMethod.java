@@ -5,6 +5,7 @@ public class JavaMethod {
 	public static void main(String[] args) {
 		//클래스 메서드에서는 오직 클래스 변수나 클래스 메서드만 실행
 		//메모리에 로드(적재)되는 때가 인스턴스보다 먼저 이루어지기 때문에 인스턴스 변수나 인스턴스 메서드는 불가
+		
 		output();
 		JavaMethod ja=new JavaMethod();
 		ja.output();
