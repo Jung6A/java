@@ -37,17 +37,3 @@ class a{
 //	return income; → income 변수의 타입을 반환 타입으로
 
 //void 타입은 반환값이 없다는 의미
-
-/*
-    주민등록번호로 남자인지 여자인지 구별
-    String gender(String jumin){
-    
-    	jumin.substring(7,8);
-    	if(gen.equals("1")||gen.equals("3")){
-    		returns "남자";
-    	}else if(gen.equals("2")||gen.equals("4")){
-    		returns "여자";
-    	}
-    	
-    }
- */
