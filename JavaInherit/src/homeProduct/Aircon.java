@@ -1,5 +1,7 @@
 package homeProduct;
 
-public class Aircon {
-
+public class Aircon extends House {
+	
+	
+	
 }
