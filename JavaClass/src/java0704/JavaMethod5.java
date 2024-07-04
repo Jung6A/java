@@ -48,6 +48,7 @@ public class JavaMethod5 {
 }
 
 class MethodUtil{
+	
 	Scanner sc=new Scanner(System.in);
 	
 	int[] twoNum(){
