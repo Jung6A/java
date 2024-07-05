@@ -4,7 +4,7 @@ public class MainClass {
 
 	public static void main(String[] args) {
 		
-		TV tv=new TV();
+		TV tv=new TV("»ï¼º", 1000000);
 		tv.brand="»ï¼º";
 		tv.power();
 		tv.power();
