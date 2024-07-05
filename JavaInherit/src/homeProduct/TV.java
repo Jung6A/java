@@ -18,7 +18,7 @@ public class TV extends House {
 		this.channel++;
 	}
 	
-	void channelDwon(){
+	void channelDown(){
 		this.channel--;
 	}
 	
