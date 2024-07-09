@@ -1,0 +1,63 @@
+package java0709_3;
+
+interface RestCustomer{
+	public void setCustomer(customer);
+	public String food;
+	
+	public void setCustomer(String customer) {
+		this.customer=customer;
+	}
+}
+
+class ReserveCustomerA implements RestCustomer{
+	String customer;
+	@Override
+	public void setCustomer(String customer) {
+		this.customer=customer;
+	}
+	
+	@Override
+	public String food() {
+		return customer+" 청국장 제공";
+	}
+	
+}//예약손님 A
+class ReserveCustomerB implements RestCustomer{
+	String customer;
+	@Override
+	public void setCustomer(String customer) {
+		this.customer=customer;
+	}
+	
+	@Override
+	public String food() {
+		return customer+" 돈가스 제공";
+	}
+} //예약손님 B
+
+class Owner{ //사장
+	void food(RestCustomer cus) {
+		System.out.println(cus.customer+" 음식을 제공한다.");
+	}
+}
+
+public class Interface_text1 {
+	
+	Owner ow=new Owner();
+	ReserveCustomerA a=new ReserveCustomerA();
+	ReserveCustomerB b=new ReserveCustomerB();
+	
+	a.setCustomer("A-이순신");
+	b.setCustomer("B-장보고");
+	
+	ow.food(a);
+	ow.food(b);
+	
+}
+
+//사용자 요청 처리 클래스- 컨트롤 클래스
+//사용자 요청에 필요한 데이터 가공 및 수집·실행 클래스- 서비스 클래스, 인터페이스
+//데이터만 저장하는 클래스- 사용자에게 제공할 데이터 클래스(VO, DTO)
+//				   - 데이터베이스에 저장하기 위한 클래스(Entity)
+//데이터베이스 처리 인터페이스- repository(레포지터리)
+//
