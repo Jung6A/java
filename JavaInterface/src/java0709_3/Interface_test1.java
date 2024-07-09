@@ -1,58 +1,57 @@
 package java0709_3;
 
 interface RestCustomer{
-	public void setCustomer(customer);
-	public String food;
+	public void setCustomer(String customer);
+	public String food();
 	
-	public void setCustomer(String customer) {
-		this.customer=customer;
-	}
 }
 
 class ReserveCustomerA implements RestCustomer{
-	String customer;
+	String customer; // 예약 손님
+
 	@Override
 	public void setCustomer(String customer) {
-		this.customer=customer;
+		this.customer=customer;		
 	}
-	
+
 	@Override
 	public String food() {
-		return customer+" 청국장 제공";
+		return customer+" 청국장 제공";		
 	}
-	
-}//예약손님 A
+} //예약손님 A
 class ReserveCustomerB implements RestCustomer{
-	String customer;
+	String customer; // 예약 손님
 	@Override
 	public void setCustomer(String customer) {
-		this.customer=customer;
+		this.customer=customer;		
 	}
-	
+
 	@Override
 	public String food() {
-		return customer+" 돈가스 제공";
+		return customer+" 돈가스 제공";		
 	}
 } //예약손님 B
 
 class Owner{ //사장
-	void food(RestCustomer cus) {
-		System.out.println(cus.customer+" 음식을 제공한다.");
+	void food( RestCustomer cus ) {
+		System.out.println( cus.food());
 	}
 }
 
-public class Interface_text1 {
-	
-	Owner ow=new Owner();
-	ReserveCustomerA a=new ReserveCustomerA();
-	ReserveCustomerB b=new ReserveCustomerB();
-	
-	a.setCustomer("A-이순신");
-	b.setCustomer("B-장보고");
-	
-	ow.food(a);
-	ow.food(b);
-	
+public class Interface_test1 {
+
+	public static void main(String[] args) {
+		
+		Owner ow = new Owner();
+		ReserveCustomerA a = new ReserveCustomerA();
+		ReserveCustomerB b = new ReserveCustomerB();
+		a.setCustomer("A-이순신");
+		b.setCustomer("B-장보고");
+		
+		ow.food(a);
+		ow.food(b);
+	}
+
 }
 
 //사용자 요청 처리 클래스- 컨트롤 클래스
