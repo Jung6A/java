@@ -33,8 +33,8 @@ class ReserveCustomerB implements RestCustomer{
 } //예약손님 B
 
 class Owner{ //사장
-	void food( RestCustomer cus ) {
-		System.out.println( cus.food());
+	void food(RestCustomer cus) {
+		System.out.println(cus.food());
 	}
 }
 
@@ -42,9 +42,9 @@ public class Interface_test1 {
 
 	public static void main(String[] args) {
 		
-		Owner ow = new Owner();
-		ReserveCustomerA a = new ReserveCustomerA();
-		ReserveCustomerB b = new ReserveCustomerB();
+		Owner ow=new Owner();
+		ReserveCustomerA a=new ReserveCustomerA();
+		ReserveCustomerB b=new ReserveCustomerB();
 		a.setCustomer("A-이순신");
 		b.setCustomer("B-장보고");
 		
