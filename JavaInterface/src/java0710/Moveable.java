@@ -1,7 +1,6 @@
 package java0710;
 
-public class Moveable {
+public interface Moveable {
 	
-	public void save(Moveavle<T> m)
-	
+	public void save(Moveable<T> m);
 }
