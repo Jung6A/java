@@ -50,13 +50,15 @@ public class TreeSetStudy {
 		System.out.print("내 점수: ");
 		int myScore=scan.nextInt();
 		scan.nextLine();
-		rank.add(myScore);
 		
-		if(rank.lower(myScore)==90||myScore==90) {
+		switch(rank.lower(myScore+1)) {
+		case 90:
 			System.out.println("상위 10%");
-		}else if(rank.lower(myScore)==70||myScore==70) {
+			break;
+		case 70:
 			System.out.println("상위 30%");
-		}else {
+			break;
+		case 40:
 			System.out.println("상위 80%");
 		}
 		
@@ -66,10 +68,10 @@ public class TreeSetStudy {
 		
 		//내 점수를 입력하고 나보다 높은 사람들 출력
 		System.out.print("내 점수: ");
-		String myS=scan.nextLine();
+		String myS=scan.nextLine()+"점 나";
 		
 		score.add(myS);
-		if(myS.equals("100")) {
+		if(myS.equals("100점 나")) {
 			System.out.println("1등!!");
 		}else {
 			System.out.println(score.tailSet(myS));
