@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
     
 <%
-	String path="http://localhost:8080/jsp_study1/sessionTest/";
+	String path="http://localhost:8080/jsp_study1/study/";
 %>
 
 <div id="header">
@@ -13,7 +13,7 @@
 	</div>
 	<div id="nav">
 		<div class="logo"></div>
-		<ul class="menulist">
+		<ul class="menuList">
 			<li><a href="<%=path%>">HOME</a></li>
 			<li><a href="<%=path%>">게시판</a></li>
 			<li><a href="<%=path%>">자료실</a></li>
