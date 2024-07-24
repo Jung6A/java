@@ -3,24 +3,20 @@
     
 
 <div id="signBox">
-	<div id="ha">
-		<form method="post" action="signCheck.jsp" id="signForm">
-			<div id="signInput">
-				<div>
-					<b>아이디</b>
-					<input type="text" name="userId">
-				</div>
-				<div>
-					<b>비밀번호</b>
-					<input type="password" name="userPassword">
-				</div>
-			</div>
-			<div><button id="loginBT">로그인</button></div>
+	<form method="post" action="signCheck.jsp">
+		<div>
+			<b>아이디</b>
+			<input type="text" name="userId">
+		</div>
+		<div>
+			<b>비밀번호</b>
+			<input type="password" name="userPassword">
+		</div>
+		<button id="loginBT">로그인</button>
 		</form>
-	</div>
 	<div id="option">
 		<p><a href="findUser.jsp">아이디/비밀번호 찾기</a></p>
-		<p><a href="signup.jsp">회원가입</a></p>
+		<p><a href="/jsp_study1/study/?part=signup">회원가입</a></p>
 	</div>
 </div>
 

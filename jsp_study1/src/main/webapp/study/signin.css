@@ -4,11 +4,7 @@
 	width: 400px;
 	margin: 0 auto;
 }
-#ha{
-	display: flex;
-	justify-content: center;
-}
-#signInput input{
+#signBox input{
 	width: 150px;
 }
 #loginBT{
