@@ -33,9 +33,11 @@
 		let id=document.getElementById("userId");
 		let pw=document.getElementById("userPassword");
 		if(id.value=='') { //아이디 미입력한 경우
-			document.getElementsByClassName("error")[0].innerText="아이디를 입력하세요";
+			document.getElementsByClassName("error")[0].innerText="아이디를 입력하세요.";
 		}else if(pw.value=='') { //비밀번호 미입력한 경우
-			
+			document.getElementsByClassName("error")[1].innerText="비밀번호를 입력하세요.";
+		}else{ //아이디·비밀번호 입력했다면 로그인 처리 페이지로 전송 및 이동 
+			document.getElementById("signFm").submit();
 		}
 	});
 </script>
