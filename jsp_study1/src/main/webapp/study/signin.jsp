@@ -3,22 +3,42 @@
     
 
 <div id="signBox">
-	<form method="post" action="signCheck.jsp">
+	<form id="signFm" method="post" action="signCheck.jsp">
 		<div>
 			<b>아이디</b>
-			<input type="text" name="userId">
+			<input type="text" name="userId" id="userId">
+			<p class="error"></p>
 		</div>
 		<div>
 			<b>비밀번호</b>
-			<input type="password" name="userPassword">
+			<input type="password" name="userPassword" id="userPassword">
+			<p class="error"></p>
 		</div>
-		<button id="loginBT">로그인</button>
+		<button type="button" id="loginBT">로그인</button>
 		</form>
 	<div id="option">
 		<p><a href="findUser.jsp">아이디/비밀번호 찾기</a></p>
 		<p><a href="/jsp_study1/study/?part=signup">회원가입</a></p>
 	</div>
 </div>
+<style>
+	.error{
+		color: red;
+		font-size: 12px;
+	}
+</style>
+<script>
+	let bt=document.getElementById("loginBT");
+	bt.addEventListener("click",function() { //로그인 버튼의 클릭 이벤트 등록 및 실행 함수정의
+		let id=document.getElementById("userId");
+		let pw=document.getElementById("userPassword");
+		if(id.value=='') { //아이디 미입력한 경우
+			document.getElementsByClassName("error")[0].innerText="아이디를 입력하세요";
+		}else if(pw.value=='') { //비밀번호 미입력한 경우
+			
+		}
+	});
+</script>
 
 <%--
 	전송 방식: post

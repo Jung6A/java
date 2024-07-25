@@ -19,6 +19,6 @@
 			<label>이름</label>
 			<input type="text" name="userName" placeholder="이름 입력">
 		</div>
-		<button>회원가입</button>
+		<button id="joinBT">회원가입</button>
 	</form>
 </div>

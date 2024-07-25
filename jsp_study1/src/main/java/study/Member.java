@@ -1,7 +1,7 @@
 package study;
 
 public class Member {
-	private String userId;
+	private String userId; //데이터 컬럼명 규칙- user_id (대문자 사용하지 않음)
 	private String userPassword;
 	private String userEmail;
 	private String userName;

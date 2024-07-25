@@ -11,7 +11,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="default.css">
-<link rel="stylesheet" href="<%=part %>.css">
+<link rel="stylesheet" href="<%=part%>.css">
 </head>
 <body>
 	<div id="wrap">
