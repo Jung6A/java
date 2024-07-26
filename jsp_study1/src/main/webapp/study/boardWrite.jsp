@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-<form method="post" action="boardSave.jsp">
+<form method="post" action="boardSave.jsp" enctype="multipart/form-data">
 	<div id="writeBox">
 		<div class="writeInput">
 			<label>제목</label>
@@ -9,7 +9,8 @@
 		</div>
 		<div class="writeInput">
 			<label>이미지</label>
-			<input type="file" name="" id="">
+			<input type="file" name="boardImg" id="boardImg" accept="image/*">
+											<!-- accept="image/*"  accept="video/*" -->
 		</div>
 		<div class="writeInput">
 			<label>내용</label>

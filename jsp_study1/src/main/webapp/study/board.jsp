@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" import="study.* , java.sql.SQLException , java.util.ArrayList"%>
 
 <div id="boardWrap">
 	<h2>게시판</h2>
@@ -13,13 +13,32 @@
 					<th class="hit">조회수</th>
 				</tr>
 				<%
-					for(int i=0;i<0;i++) {
+				DBconnect db=new DBconnect();
+				String sql="select * from board order by board_id desc";
+				//order by 정렬기준컬럼명 (asc: 오름차순  desc: 내림차순)
+				
+				ArrayList<Board> list=new ArrayList<>();
+				try {
+					db.pt=db.conn.prepareStatement(sql);
+					db.rs=db.pt.executeQuery();
+					while(db.rs.next()) {
+						list.add(
+							new Board(db.rs.getInt(1), db.rs.getString(2), db.rs.getString(3), db.rs.getString(4), db.rs.getInt(5))
+								);
+					}
+					
+				}catch(SQLException e) {
+					e.printStackTrace();
+					System.out.println("board 테이블 조회 실패");
+				}
+				
+				for(Board bd:list){
 				%>
 				<tr>
-					<td class="num"></td>
-					<td class="title"></td>
-					<td class="writer"></td>
-					<td class="hit"></td>
+					<td class="num"><%=bd.getBoardId() %></td>
+					<td class="title"><%=bd.getTitle() %></td>
+					<td class="writer"><%=bd.getWriter() %></td>
+					<td class="hit"><%=bd.getHit() %></td>
 				</tr>
 				<% } %>
 			</table>

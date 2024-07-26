@@ -9,6 +9,9 @@
 	String content=request.getParameter("content");
 	String pw=request.getParameter("password");
 	
+	//작성한 문의글 관리자에게 메일 전송
+	SendEmail.sendEmail(email, title, content);
+	
 	DBconnect db = new DBconnect();
 	
 	String sql ="create table if not exists inquiry"+
