@@ -10,7 +10,7 @@
 	</div>
 	<div id="inquiryBox">
 		<ul id="inquiryList">
-			<li>
+			<li class="listTitle">
 				<span class="title">제목</span>
 				<span class="writer">작성자</span>
 				<span class="isAnswer">답변</span>
@@ -39,7 +39,7 @@
 				
 				for(Inquiry iq:list){
 			%>
-			<li>
+			<li class="list">
 				<span class="title"><%=iq.getTitle() %>
 					<%
 						if(!iq.getPassword().isBlank()) {

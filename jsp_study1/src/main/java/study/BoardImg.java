@@ -7,7 +7,7 @@ public class BoardImg {
 	private String imgPath;
 	
 	public BoardImg() {}
-	public BoardImg(int boardImgId,int boardId, String imgName, String imgPath) {
+	public BoardImg(int boardImgId, int boardId, String imgName, String imgPath) {
 		this.boardImgId=boardImgId;
 		this.boardId=boardId;
 		this.imgName=imgName;

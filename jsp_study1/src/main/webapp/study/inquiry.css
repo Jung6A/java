@@ -33,9 +33,12 @@
 #inquiryList li{
 	display: flex;
 }
+.listTitle{
+	margin-bottom: 15px;
+}
 .list{
-	border-bottom: 1px solid #bbb;
-	padding: 15px 0;
+	border-top: 1px solid #bbb;
+	padding: 10px 0;
 }
 .title{
 	width: 50%;

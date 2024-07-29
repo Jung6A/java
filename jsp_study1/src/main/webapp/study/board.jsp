@@ -36,7 +36,9 @@
 				%>
 				<tr>
 					<td class="num"><%=bd.getBoardId() %></td>
-					<td class="title"><%=bd.getTitle() %></td>
+					<td class="title">
+						<a href="?part=view&id=<%=bd.getBoardId()%>"><%=bd.getTitle() %></a>
+					</td>
 					<td class="writer"><%=bd.getWriter() %></td>
 					<td class="hit"><%=bd.getHit() %></td>
 				</tr>
