@@ -2,6 +2,10 @@
 	pageEncoding="UTF-8" import="java.util.ArrayList"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+<a href="/main.jsp">로그인 및 회원가입</a>
+<a href="/board.jsp">게시판</a>
+<a href="/inquiry">문의</a>
+
 <%-- <jsp:forward page=""/> --%>
 <%
 //	pageContext.forward("경로");

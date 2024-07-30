@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+#signBox{
+	width: 400px;
+	height: 500px;
+	margin: 0 auto;
+}
+#signFm{
+	width: 100%;
+	padding: 50px 0px 10px 0px;
+}
+#signFm input{
+	width: 300px;
+	padding-left: 10px;
+	height: 40px;
+	font-size: 15px;
+	border: 0;
+	border-bottom: 1px solid gray;
+}
+#signFm b{
+	width: 100px;
+	font-size: 16px;
+}
+#loginBT{
+	margin-top: 10px;
+	width: 100%;
+	border: 0;
+	border-radius: 10px;
+	background: cornflowerblue;
+	color: white;
+	height: 40px;
+	cursor: pointer;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+#option{
+	padding-bottom: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#option a:hover{
+	color: blue;
+}
