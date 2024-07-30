@@ -1,6 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8" import="java.util.ArrayList"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<%-- <jsp:forward page=""/> --%>
+<%
+//	pageContext.forward("경로");
+%>
+
 <%-- 코어 태그로 가능한 것: 참조변수 생성, 조건문, 반복문 (클래스, 메서드 정의 불가) --%>
 <%-- 코어 태그 변수 --%>
 <c:set var="num" value="10"/>
