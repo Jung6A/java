@@ -5,11 +5,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="Member/signin.css">
+<link rel="stylesheet" href="member/signin.css">
 </head>
 <body>
 	<div id="signBox">
-		<form id="signFm" method="post" action="signCheck.jsp">
+		<form id="signFm" method="post" action="/signinCheck.do">
 			<div>
 				<b>아이디</b>
 				<input type="text" name="userId" id="userId">
@@ -20,7 +20,7 @@
 				<input type="password" name="userPassword" id="userPassword">
 				<p class="error"></p>
 			</div>
-			<button type="button" id="loginBT">로그인</button>
+			<button id="loginBT">로그인</button>
 			</form>
 		<div id="option">
 			<p><a href="">아이디/비밀번호 찾기</a></p>

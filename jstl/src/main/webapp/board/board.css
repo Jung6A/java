@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+#boardWrap{
+	width: 700px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+#boardBox{
+	width: 100%;
+	padding: 20px 0;
+}
+#boardList{
+	border-collapse: collapse;
+	width: 100%;
+}
+#boardList .num{
+	width: 100px;
+	text-align:center;
+}
+#boarList .title{
+	width: 400px;
+}
+#boardList .writer{
+	width: 100px;
+	text-align: center;
+}
+#boardList .hit{
+	width: 100px;
+	text-align: center;
+}
+#boardList th{
+	padding-bottom: 15px;
+}
+#boardList td{
+	border-top: 1px solid #aaa;
+	padding: 7px 0;
+}
+#boardWriteBox{
+	text-align: right;
+}
+#wrBT{
+	display: inline-block;
+	padding: 10px 25px;
+	background-color: cornflowerblue;
+	border-radius: 10px;
+	font-size: 14px;
+	color: white;
+	cursor: pointer;
+}
