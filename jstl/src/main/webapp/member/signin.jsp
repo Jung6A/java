@@ -10,6 +10,7 @@
 <body>
 	<div id="signBox">
 		<form id="signFm" method="post" action="/signinCheck.do">
+			<input type="hidden" name="preURL" id="preURL">
 			<div>
 				<b>아이디</b>
 				<input type="text" name="userId" id="userId">
@@ -29,3 +30,6 @@
 	</div>
 </body>
 </html>
+<script>
+	document.getElementById("preURL").value=document.referrer;
+</script>

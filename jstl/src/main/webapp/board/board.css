@@ -5,7 +5,13 @@
 	margin: 0 auto;
 	padding: 50px 0;
 }
-
+a{
+	text-decoration: none;
+	color: black
+}
+a:hover{
+	color: cornflowerblue;
+}
 #boardBox{
 	width: 100%;
 	padding: 20px 0;
@@ -45,6 +51,47 @@
 	background-color: cornflowerblue;
 	border-radius: 10px;
 	font-size: 14px;
+	color: white;
+	cursor: pointer;
+	margin-top: 30px;
+}
+#pageNumList{
+	list-style: none;
+	padding: 30px 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+#pageNumList li{
+	width: 50px;
+	text-align: center;
+}
+#pageNumList .nowPage{
+	background: #ccc;
+	font-weight: 800;
+}
+#boardSearchBox{
+	padding: 15px 0;
+}
+.boardSearch{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#word{
+	width: 300px;
+	outline: none;
+	font-size: 15px;
+	padding: 4.5px 10px;
+	border-radius: 10px;
+}
+.boardSearch button{
+	border: 0;
+	height: 33px;
+	margin-left: 15px;
+	width: 70px;
+	background: cornflowerblue;
+	border-radius: 10px;
 	color: white;
 	cursor: pointer;
 }
