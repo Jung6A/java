@@ -26,6 +26,25 @@ public class BoardDAO extends DBConnect {
 		return 0;
 	}
 	
+	public BoardDTO findById(int bid) { //게시글 상세 페이지 열람
+		String sql="select * from board where board_id=?";
+		
+		try {
+			pt=conn.prepareStatement(sql);
+			pt.setInt(1, bid);
+			rs=pt.executeQuery();
+			if(rs.next()) {
+				return new BoardDTO(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getInt(5));
+			}
+		}catch(SQLException e) {
+			System.out.println("게시글 상세 페이지 조회 실패");
+			e.printStackTrace();
+		}
+		
+		return null;
+	}
+	
+	
 	public List<BoardDTO> findAll(int row, String keyword) {
 		keyword="%"+keyword+"%";
 		String sql="select * from board where title like ? or content like ? order by board_id desc limit ?, 10";
@@ -61,5 +80,19 @@ public class BoardDAO extends DBConnect {
 			System.out.println("게시글 저장 실패");
 			e.printStackTrace();
 		}
+	}
+
+	public void delete(int bid) { //게시글 삭제
+		String sql="delete from board where board_id=?";
+		
+		try {
+			pt=conn.prepareStatement(sql);
+			pt.setInt(1, bid);
+			pt.executeUpdate();
+		}catch(SQLException e) {
+			System.out.println("게시글 삭제 실패");
+			e.printStackTrace();
+		}
+		
 	}
 }
